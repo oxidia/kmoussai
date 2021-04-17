@@ -19,7 +19,8 @@ export default function Home() {
   };
 
   return (
-    <div className='container mx-auto p-4' style={{ border: '1px red solid' }}>
+    // xl:px-48 lg:px-32
+    <div className='border-2 container mx-auto 2xl:border-gray-600'>
       <Head>
         <title>Khalid MOUSSAID</title>
       </Head>
