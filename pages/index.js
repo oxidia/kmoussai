@@ -3,6 +3,7 @@ import { RiMoonFill, RiSunFill, RiTwitterFill } from 'react-icons/ri'
 import Head from "next/head";
 import { useTheme } from "next-themes"
 import { useEffect, useState } from 'react';
+import ThemeToggle from '../component/themeToggle';
 
 export default function Home() {
 
@@ -10,6 +11,7 @@ export default function Home() {
   const [isMounted, setIsMounted] = useState(false)
   useEffect(() => {
     setIsMounted(true);
+    // setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
   }, []);
 
   const switchTheme = () => {
@@ -17,6 +19,8 @@ export default function Home() {
       setTheme(theme === "light" ? "dark" : "light");
     }
   };
+
+  if (!isMounted) return null
 
   return (
     // xl:px-48 lg:px-32
@@ -26,7 +30,7 @@ export default function Home() {
       </Head>
       <header>
         <div className="flex flex-row justify-end">
-          <div className="cursor-pointer border border-black dark:border-gray-100 rounded-full h-10 w-10 flex items-center justify-center m-2 p-0">
+          {/* <div className="cursor-pointer border border-black dark:border-gray-100 rounded-full h-10 w-10 flex items-center justify-center m-2 p-0">
             <AiFillGithub />
           </div>
           <div className="cursor-pointer border border-black dark:border-gray-100 rounded-full h-10 w-10 flex items-center justify-center m-2">
@@ -35,15 +39,15 @@ export default function Home() {
           <div className="cursor-pointer border border-black dark:border-gray-100 rounded-full h-10 w-10 flex items-center justify-center m-2">
             <RiTwitterFill />
           </div>
-          <div className='m-2 border border-gray-600' />
-          <div className="dark:bg-white bg-black cursor-pointer border border-gray-500 rounded-full h-10 w-10 flex items-center justify-center m-2">
-            <button onClick={switchTheme}>
-              {theme === 'dark' ? <RiSunFill color='black' /> : <RiMoonFill color='white' />}
-            </button>
+          <div className='m-2 border border-gray-600' /> */}
+          <div className="flex items-center justify-center m-2">
+            <ThemeToggle />
           </div>
         </div>
       </header>
       <div className="m-2 p-0 border border-gray-600 bg-gray-600" />
+
+      <p>{theme}</p>
 
     </div>
 
