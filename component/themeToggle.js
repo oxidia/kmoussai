@@ -21,13 +21,15 @@ const ThemeToggle = () => {
 
     }, []);
 
+    if (!isMounted) return null
+
     return (
         <div
-            className={`w-20 h-10 flex justify-between items-center rounded-full p-2 relative  duration-300 ease-in-out dark:bg-white bg-black`}
+            className={`w-12 h-6 flex justify-between items-center rounded-full p-2 relative  duration-300 ease-in-out dark:bg-white bg-black`}
             onClick={switchToggle}>
             <RiSunFill color='black' />
             <RiMoonFill color='white' />
-            <div className={`dark:bg-black bg-white w-8 h-8 rounded-full shadow-md absolute transform duration-300 ease-in-out ${theme == 'dark' ? 'translate-x-8' : ''}`}>
+            <div className={`dark:bg-black bg-white w-4 h-4 rounded-full shadow-md absolute transform duration-300 ease-in-out ${theme == 'dark' ? 'translate-x-4' : ''}`}>
             </div>
         </div>
     )

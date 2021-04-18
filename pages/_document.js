@@ -4,9 +4,9 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 class MyDocument extends Document {
   render() {
     return (
-      <Html className='dark'>
+      <Html className='dark h-full'>
         <Head />
-        <body className="bg-white text-black dark:bg-black dark:text-white">
+        <body className="bg-white text-black dark:bg-black dark:text-white h-full">
           <Main />
           <NextScript />
         </body>
