@@ -1,6 +1,6 @@
 
 
-import { RiMenuFill, RiCloseFill } from 'react-icons/ri'
+import { RiMenuFill, RiCloseFill, RiGithubFill, RiLinkedinFill, RiTwitterFill, RiHeartFill} from 'react-icons/ri'
 import Head from "next/head";
 import { useTheme } from "next-themes"
 import { useEffect, useState } from 'react';
@@ -15,8 +15,12 @@ export default function Home() {
   }
 
   return (
-    // xl:px-48 lg:px-32
-    <div className='container mx-auto h-full'>
+    <div className='p-2 h-full bg-gray-50 dark:bg-gray-600'>
+      <style global jsx>{`
+      #__next {
+        height: 100%;
+      }
+    `}</style>
       <Head>
         <title>Khalid MOUSSAID</title>
       </Head>
@@ -36,9 +40,40 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <div className="m-2 p-0 border border-gray-600 bg-gray-600" />
-      <div className='shadow h-full'>
-        <h3>Content</h3>
+      <div className="m-2 p-0 border dark:border-pink-50 border-gray-600 bg-gray-600" />
+      <div className=' p-4 flex justify-between  h-full'>
+        <div className='flex flex-col justify-between '>
+          <div>
+          </div>
+          <div>
+          </div>
+        </div>
+        <div className='flex justify-center items-center flex-col'>
+          <p className="font-sans font-bold text-2xl">Coming soon</p>
+          <div className="flex p-2 items-center justify-center">
+            <a href="http://github.com/kmoussai" target="_blank">
+              <RiGithubFill size={'2.5em'} />
+            </a>
+            <a href="https://www.linkedin.com/in/kmoussai/" target="_blank">
+              <RiLinkedinFill color={'#0077b5'} size={'2.5em'} />
+            </a>
+            <a href="https://twitter.com/k_moussai" target="_blank">
+              <RiTwitterFill color={'#08a0e9'} size={'2.5em'} />
+            </a>
+          </div>
+        </div>
+        <div className='flex'>
+        </div>
+        {/* <div className='flex'>
+          4
+        </div>
+        <div className='flex'>
+          3
+        </div> */}
+
+      </div>
+      <div className="flex items-center justify-center p-2">
+        <p>Made with NextJS (!<RiHeartFill color='red' className='inline'/>) by MOUSSAID Khalid</p>
       </div>
     </div>
 
