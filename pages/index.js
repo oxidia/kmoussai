@@ -23,6 +23,7 @@ export default function Home() {
     `}</style>
       <Head>
         <title>Khalid MOUSSAID</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
         <div className="flex flex-row justify-end">
