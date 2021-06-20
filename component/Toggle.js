@@ -4,7 +4,7 @@ import { useTheme } from "next-themes"
 
 
 
-const ThemeToggle = () => {
+const Toggle = () => {
 
     const { theme, setTheme } = useTheme();
     const [isMounted, setIsMounted] = useState(false)
@@ -35,4 +35,4 @@ const ThemeToggle = () => {
     )
 }
 
-export default ThemeToggle;
+export default Toggle;

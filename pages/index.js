@@ -4,7 +4,7 @@ import { RiMenuFill, RiCloseFill, RiGithubFill, RiLinkedinFill, RiTwitterFill, R
 import Head from "next/head";
 import { useTheme } from "next-themes"
 import { useEffect, useState } from 'react';
-import ThemeToggle from '../component/themeToggle';
+import Toggle from '../component/Toggle';
 import About from '../component/About';
 import Project from '../component/Project';
 import Technologies from '../component/Technologie';
@@ -29,7 +29,7 @@ export default function Home() {
           <div className="m-2 p-0 border border-gray-600 bg-gray-600" />
 
           <div className="md:flex items-center justify-center m-1 cursor-pointer">
-            <ThemeToggle />
+            <Toggle />
           </div>
         </div>
       </header>

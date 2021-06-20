@@ -14,7 +14,7 @@ export default function Project({ title }) {
             category: 'freelancing',
             title: 'Math on demand',
             description:
-                'a platform that allows students to ask complicated math questions and get answers from professors',
+                'Build a platform that allows students to ask complicated math questions and get answers from professors, using MERN stack',
             icons: [
                 {
                     src: '/reactjs.png',
@@ -37,11 +37,16 @@ export default function Project({ title }) {
             category: 'Personal',
             title: 'Portfolio',
             description:
-                'Personal Portfolio site built with NextJS',
+                'Personal Portfolio site built with NextJS and using tailwind css for styling',
             icons: [
                 {
                     src: '/nextjs.png',
                     title: 'NextJS',
+                    url: ''
+                },
+                {
+                    src: '/tailwind.png',
+                    title: 'Tailwind CSS',
                     url: ''
                 },
             ],
@@ -63,11 +68,11 @@ export default function Project({ title }) {
                                         <h2 className="text-xl font-bold truncate mt-1">{item.title}</h2>
                                         <p className="text-base font-mono mt-1">{item.description}</p>
                                     </div>
-                                    <div className="flex flex-row mt-5 items-center justify-start">
+                                    {/* <div className="flex flex-row mt-5 items-center justify-start">
                                         {item.icons.map((icon) => {
                                             return <img key={icon.title} className="rounded-2xl mr-2 w-9 h-auto" src={icon.src} />
                                         })}
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         )
