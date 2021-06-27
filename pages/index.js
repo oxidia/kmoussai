@@ -11,8 +11,6 @@ import Technologies from '../components/Technologie';
 
 export default function Home() {
 
-  const [openDrawer, setOpenDrawer] = useState(false)
-
   return (
     <div className='p-2 min-h-full bg-gray-50 dark:bg-gray-900 sm:border-red-600 border md:border-green-600 lg:border-blue-600 relative'>
       <style global jsx>{`

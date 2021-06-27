@@ -44,12 +44,14 @@ export default function Technologies({ title }) {
                 <div className="my-1 w-full p-2 ">
                     <span className="font-mono uppercase p-3">Backend</span>
                     <div className="border-b border-gray-400 my-2" />
-                    <div className="grid grid-cols-4 gap-2">
+                    <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-2">
                         {data.back.map((item) => {
                             return (
                                 <div key={item.title} className="dark:bg-gray-600 rounded-xl h-full shadow-xl transition-transform transform hover:scale-105 cursor-pointer duration-300 ease-in-out">
-                                    <div className="flex justify-start items-center ">
-                                        <img className="h-auto w-14 p-1" src={item.icon} />
+                                     <div className="w-full flex items-center rounded-md px-2">
+                                        <span className="relative h-8 w-8 overflow-hidden rounded-md flex items-center p-0.5 mr-2 flex-shrink-0">
+                                        <img loading="lazy"  className="rounded-md mr-2" src={item.icon} />
+                                        </span>
                                         <div className="w-full text-left p-2 font-bold">
                                             <span>{item.title}</span>
                                         </div>
@@ -64,12 +66,14 @@ export default function Technologies({ title }) {
                 <div className="my-1 w-full p-2 ">
                     <span className="font-mono uppercase">Frontend</span>
                     <div className="border-b border-gray-400 my-2" />
-                    <div className="grid grid-cols-4 gap-2">
+                    <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-2">
                         {data.front.map((item) => {
                             return (
                                 <div key={item.title} className="dark:bg-gray-600 rounded-xl h-full shadow-xl transition-transform transform hover:scale-105 cursor-pointer duration-300 ease-in-out">
-                                    <div className="flex justify-start items-center ">
-                                        <img className="h-auto w-14 p-1" src={item.icon} />
+                                    <div className="w-full flex items-center rounded-md px-2">
+                                        <span className="relative h-8 w-8 overflow-hidden rounded-md flex items-center p-0.5 mr-2 flex-shrink-0">
+                                        <img loading="lazy"  className="rounded-md mr-2" src={item.icon} />
+                                        </span>
                                         <div className="w-full text-left p-2 font-bold">
                                             <span>{item.title}</span>
                                         </div>
