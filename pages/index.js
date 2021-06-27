@@ -4,10 +4,10 @@ import { RiMenuFill, RiCloseFill, RiGithubFill, RiLinkedinFill, RiTwitterFill, R
 import Head from "next/head";
 import { useTheme } from "next-themes"
 import { useEffect, useState } from 'react';
-import Toggle from '../component/Toggle';
-import About from '../component/About';
-import Project from '../component/Project';
-import Technologies from '../component/Technologie';
+import Toggle from '../components/Toggle';
+import About from '../components/About';
+import Project from '../components/Project';
+import Technologies from '../components/Technologie';
 
 export default function Home() {
 

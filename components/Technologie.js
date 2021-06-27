@@ -67,7 +67,7 @@ export default function Technologies({ title }) {
                     <div className="grid grid-cols-4 gap-2">
                         {data.front.map((item) => {
                             return (
-                                <div className="dark:bg-gray-600 rounded-xl h-full shadow-xl transition-transform transform hover:scale-105 cursor-pointer duration-300 ease-in-out">
+                                <div key={item.title} className="dark:bg-gray-600 rounded-xl h-full shadow-xl transition-transform transform hover:scale-105 cursor-pointer duration-300 ease-in-out">
                                     <div className="flex justify-start items-center ">
                                         <img className="h-auto w-14 p-1" src={item.icon} />
                                         <div className="w-full text-left p-2 font-bold">
