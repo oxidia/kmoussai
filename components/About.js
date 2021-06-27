@@ -7,7 +7,7 @@ export default function About({ title }) {
 
     return (
         <Card title={title}>
-            <div className="hidden w-52 sm:flex flex-col justify-center p-1 ">
+            <div className="hidden ">
                 <img loading='lazy' className="rounded-lg shadow-lg antialiased" src="/profile.jpeg" />
             </div>
             <div className="sm:w-2/3 px-3 flex flex-row flex-wrap">
