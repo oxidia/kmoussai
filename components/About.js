@@ -12,15 +12,18 @@ export default function About({ title }) {
   return (
     <Card>
       <div
-        className="flex flex-col-reverse md:grid md:grid-cols-2 bg-cover"
+        className="flex flex-col-reverse md:grid md:grid-cols-2 bg-cover bg-no-repeat"
         style={{ backgroundImage: "url(bg-min.png)" }}
       >
-        <div className="flex flex-col justify-center p-5 md:p-16">
+        <div className="flex xl:grid xl:grid-cols-2  p-5 md:p-16">
+          <div className="hidden xl:block"></div>
           <div className="flex flex-col md:h-full  justify-evenly">
             <div className="text-lg font-bold font-mono ">
-              <span className="border-b-2 border-dashed pb-2">Helllo, I'm moussaid khalid</span>
+              <span className="border-b-2 border-dashed pb-2">
+                Helllo, I'm moussaid khalid
+              </span>
             </div>
-            <div className="text-lg font-bold font-mono py-4 md:p-0">
+            <div className="text-lg font-bold font-mono py-4">
               <span className="  ">
                 Full-Stack developer who builds applications with high quality
                 especially maintainable code based on structure not only working
