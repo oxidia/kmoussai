@@ -20,7 +20,7 @@ export default function About({ title }) {
           <div className="flex flex-col md:h-full  justify-evenly">
             <div className="text-lg font-bold font-mono ">
               <span className="border-b-2 border-dashed pb-2">
-                Helllo, I'm moussaid khalid
+                Hello, I'm moussaid khalid
               </span>
             </div>
             <div className="text-lg font-bold font-mono py-4">
